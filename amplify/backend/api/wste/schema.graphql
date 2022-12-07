@@ -1,0 +1,12 @@
+type Pantry @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  FoodItems: [FoodItem] @hasMany(indexName: "byPantry", fields: ["id"])
+}
+
+type FoodItem @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  amount: Float
+  added: AWSDate
+  expires: String
+  pantryID: ID! @index(name: "byPantry")
+}

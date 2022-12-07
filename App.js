@@ -1,20 +1,34 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { Amplify } from "aws-amplify";
+import awsconfig from "./aws-exports";
+
+Amplify.configure(awsconfig);
+import { StatusBar } from "expo-status-bar";
+import { StyleSheet, View } from "react-native";
+import { Button, Text, TextInput } from "@react-native-material/core";
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <>
+      <View style={styles.container}>
+        <Text variant="h6">PROJECT wste</Text>
+        <TextInput label="Search" style={{ margin: 16 }} />
+        <Button title="Click Me" />
+        <StatusBar style="auto" />
+      </View>
+    </>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    backgroundColor: "#fff",
+    alignSelf: "center",
+    justifyContent: "center"
   },
+  container2: {
+    flex: 1,
+    backgroundColor: "#fff",
+    justifyContent: "center"
+  }
 });
