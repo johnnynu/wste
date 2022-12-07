@@ -1,7 +1,3 @@
-import { Amplify } from "aws-amplify";
-import awsconfig from "./aws-exports";
-
-Amplify.configure(awsconfig);
 import { StatusBar } from "expo-status-bar";
 import { StyleSheet, View } from "react-native";
 import { Button, Text, TextInput } from "@react-native-material/core";
@@ -11,7 +7,7 @@ export default function App() {
     <>
       <View style={styles.container}>
         <Text variant="h6">PROJECT wste</Text>
-        <TextInput label="Search" style={{ margin: 16 }} />
+        <TextInput style={{ margin: 16 }} />
         <Button title="Click Me" />
         <StatusBar style="auto" />
       </View>
