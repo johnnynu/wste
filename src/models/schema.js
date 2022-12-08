@@ -78,10 +78,10 @@ export const schema = {
                     "isRequired": true,
                     "attributes": []
                 },
-                "amount": {
-                    "name": "amount",
+                "name": {
+                    "name": "name",
                     "isArray": false,
-                    "type": "Float",
+                    "type": "String",
                     "isRequired": false,
                     "attributes": []
                 },
@@ -92,10 +92,10 @@ export const schema = {
                     "isRequired": false,
                     "attributes": []
                 },
-                "expires": {
-                    "name": "expires",
+                "amount": {
+                    "name": "amount",
                     "isArray": false,
-                    "type": "String",
+                    "type": "Float",
                     "isRequired": false,
                     "attributes": []
                 },
@@ -104,6 +104,13 @@ export const schema = {
                     "isArray": false,
                     "type": "ID",
                     "isRequired": true,
+                    "attributes": []
+                },
+                "expires": {
+                    "name": "expires",
+                    "isArray": false,
+                    "type": "String",
+                    "isRequired": false,
                     "attributes": []
                 },
                 "createdAt": {
@@ -161,5 +168,5 @@ export const schema = {
     "enums": {},
     "nonModels": {},
     "codegenVersion": "3.3.2",
-    "version": "9d924db5910bd1b187a556a57d1eabd2"
+    "version": "17b986dfae070071c7f7801daa439a1b"
 };

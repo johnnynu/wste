@@ -5,8 +5,10 @@ type Pantry @model @auth(rules: [{allow: public}]) {
 
 type FoodItem @model @auth(rules: [{allow: public}]) {
   id: ID!
-  amount: Float
+  name: String
   added: AWSDate
-  expires: String
+  amount: Float
   pantryID: ID! @index(name: "byPantry")
+  expires: String
 }
+ 

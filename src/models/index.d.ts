@@ -40,10 +40,11 @@ type EagerFoodItem = {
     readOnlyFields: 'createdAt' | 'updatedAt';
   };
   readonly id: string;
-  readonly amount?: number | null;
+  readonly name?: string | null;
   readonly added?: string | null;
-  readonly expires?: string | null;
+  readonly amount?: number | null;
   readonly pantryID: string;
+  readonly expires?: string | null;
   readonly createdAt?: string | null;
   readonly updatedAt?: string | null;
 }
@@ -54,10 +55,11 @@ type LazyFoodItem = {
     readOnlyFields: 'createdAt' | 'updatedAt';
   };
   readonly id: string;
-  readonly amount?: number | null;
+  readonly name?: string | null;
   readonly added?: string | null;
-  readonly expires?: string | null;
+  readonly amount?: number | null;
   readonly pantryID: string;
+  readonly expires?: string | null;
   readonly createdAt?: string | null;
   readonly updatedAt?: string | null;
 }
